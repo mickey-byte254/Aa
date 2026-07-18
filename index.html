@@ -715,7 +715,7 @@
             heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
             heart.style.animation = `floatHeart ${Math.random() * 3 + 3}s linear forwards`;
             container.appendChild(heart);
-            setTimeout(() => heart.remove(), 6000);
+            setTimeout(() => heart.remove(), 60000);
         }
 
         setInterval(() => createHeart('particle-container'), 300);
