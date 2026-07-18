@@ -10,17 +10,26 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,900&display=swap"
         rel="stylesheet">
     <style>
-        :root {
-            --accent: #ff2d55;
-            --accent-glow: rgba(255, 45, 85, 0.5);
-            --gold: #d4af37;
-            --glass: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --bg-dark: #0a0a0b;
-            --royal-red: #6e0000;
-            --bulb-warm: #ffde6b;
-            --bulb-glow: rgba(255, 222, 107, 0.8);
-        }
+        /* Golden Brown Styles */
+:root {
+    /* Rich golden brown palette updates */
+    --bg-dark: #1c120c; /* Deep espresso base */
+    --gold: #d4af37;
+    --gold-glow: rgba(212, 175, 55, 0.4);
+}
+
+#hero-page {
+    background: radial-gradient(circle at center, #3d2516 0%, #170d07 100%);
+}
+
+#celebration-page {
+    background: #170d07;
+    transition: background 2s ease;
+}
+
+#celebration-page.bright {
+    background: radial-gradient(circle at center, #4a3321 0%, #170d07 100%);
+}
 
         /* --- Strict Layout Fixes --- */
         html,
