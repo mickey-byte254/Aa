@@ -688,6 +688,7 @@
     <script>
         // --- Navigation Logic ---
         function transitionTo(pageId) {
+        function transitionTo(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             const target = document.getElementById(pageId);
             target.classList.add('active');
@@ -696,7 +697,7 @@
                 setTimeout(() => {
                     document.getElementById('stage').classList.add('open');
                     startSparkles('message-card');
-           position, 2000);
+                }, 3000);
             }
             if (pageId === 'gallery-page') {
                 startGalleryEffects();
