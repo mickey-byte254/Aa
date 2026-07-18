@@ -667,7 +667,7 @@
                 </div>
             </div>
             <!-- Memory 6 -->
-            <div class="memory-card">
+          //  <div class="memory-card">
                 <img src="https://ibb.co/WNCV3vnT" alt="Memory"
                     class="memory-image">
                 <div class="memory-hover-overlay">
@@ -696,7 +696,7 @@
                 setTimeout(() => {
                     document.getElementById('stage').classList.add('open');
                     startSparkles('message-card');
-                }, 1000);
+                }, 7500);
             }
             if (pageId === 'gallery-page') {
                 startGalleryEffects();
@@ -712,7 +712,7 @@
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.bottom = '-10vh';
             heart.style.color = 'var(--accent)';
-            heart.innerHTML = '🩵';
+            heart.innerHTML = '🩵❤️‍🔥';
             heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
             heart.style.animation = `floatHeart ${Math.random() * 3 + 3}s linear forwards`;
             container.appendChild(heart);
@@ -795,8 +795,7 @@
             setInterval(() => {
                 if (document.getElementById('gallery-page').classList.contains('active')) {
                     spawnBalloons(container);
-                }
-            }, 8000);
+          fairy-lights-container"15000);
 
             // Random sparkles in gallery
             setInterval(() => {
@@ -807,7 +806,7 @@
                     s.style.top = Math.random() * 100 + '%';
                     s.style.left = Math.random() * 100 + '%';
                     container.appendChild(s);
-                    setTimeout(() => s.remove(), 2000);
+                    setTimeout(() => s.remove(), 10000);
                 }
             }, 200);
         }
